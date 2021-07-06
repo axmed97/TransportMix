@@ -1,0 +1,53 @@
+﻿@model HomeViewModel
+@{ ViewData["Title"] = "AutoSalon"; }
+
+<!-- Article Start -->
+<section class="article-section">
+    <div class="container">
+        <div class="article-img">
+            <img src="~/image/13648.jpg" alt="">
+            <h3>Avto Salonlar və Ehtiyat Hissələri</h3>
+            <div class="article-bg"></div>
+        </div>
+    </div>
+</section>
+<!-- Article end -->
+<!-- Auto Salon Start -->
+<section class="auto-section">
+    <div class="container">
+        <div class="row">
+            @{ 
+                AutoSalonVM vm = new AutoSalonVM()
+                {
+                    AutoSalons = Model.AutoSalons.OrderByDescending(x => x.Id).Take(9).ToList()
+                };
+            }
+            <partial name="_AutoSalonPartial" model="vm" />
+            <!-- #region Page-->
+            @*<div class="col-lg-12">
+                    <div class="pagination w-100" style="margin: auto">
+                        <ul class="d-flex">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-angle-double-left"></i>
+                                </a>
+                            </li>
+                            <li><a href="#" class="active-page">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>*@
+            <!-- #endregion Page-->
+        </div>
+        <div class="text-center">
+            <button id="salonloadMore" class="btn btn-outline-primary" style="font-size: 15px; padding: 15px 30px ">DAHA ÇOX</button>
+        </div>
+    </div>
+</section>
+<!-- Auto Salon End -->

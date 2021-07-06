@@ -1,0 +1,36 @@
+.category-section{
+    padding: 10rem 0;
+    .category-card{
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 20px 30px #00000080;
+        margin-bottom: 3.5rem !important;
+        .img-box{
+            height: 35rem;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 25px 25px 0 0;
+                object-fit: cover;
+            }
+        }
+        .img-title{
+            height: 80px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .img-title{
+        h2{
+            color: #000;
+        }
+    }
+}
+@media(max-width: 540px){
+    .category-card{
+        .img-box{
+            height: 40rem !important;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+﻿@model Articles
+@{
+    ViewData["Title"] = "Detail";
+    ViewData["activeTab"] = "Article";
+}
+
+@section title{
+    <h4 class="page-title text-uppercase font-medium font-14">Article</h4>
+}
+
+<dl>
+    <dt>Image</dt>
+    <dd><img width="450" class="img-thumbnail" src="~/image/@(Model.Image)" alt="Alternate Text" /></dd>
+    <dt>Header</dt>
+    <dd>@Model.Header</dd>
+    <dt>Content</dt>
+    <dd>@Model.Content</dd>
+</dl>
+
+<a href="/Admin/Article/Index" class="btn btn-outline-danger btn-lg btn-block">Return</a>
+

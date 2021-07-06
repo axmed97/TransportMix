@@ -1,0 +1,32 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "AutoService";
+}
+
+<!-- Article Start -->
+<section class="article-section">
+    <div class="container">
+        <div class="article-img">
+            <img src="~/image/184367.jpg" alt="">
+            <h3>Avto Servislər</h3>
+            <div class="article-bg"></div>
+        </div>
+    </div>
+</section>
+<!-- Article end -->
+<!-- Auto Salon Start -->
+<section class="auto-section">
+    <div class="container">
+        <div class="row">
+            @{ var vm = new AutoServiceVM()
+            {
+                AutoServices = Model.AutoServices.OrderByDescending(x => x.Id).Take(9).ToList()
+            }; }
+            <partial name="_AutoServicePartial" model="vm" />
+        </div>
+        <div class="text-center">
+            <button id="serviceloadMore" class="btn btn-outline-primary" style="font-size: 15px; padding: 15px 30px ">DAHA ÇOX</button>
+        </div>
+    </div>
+</section>
+<!-- Auto Salon End -->

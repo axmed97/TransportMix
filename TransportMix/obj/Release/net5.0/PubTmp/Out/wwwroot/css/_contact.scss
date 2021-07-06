@@ -1,0 +1,85 @@
+.contact-section{
+    padding: 160px 0 100px;
+    h1{
+        color: #3a7bd5;
+        font-size: 3rem;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+    .contact-input{
+        input{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+        }
+        #submit-btn{
+            border: none;
+            background: #333;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 2.5px;
+        }
+        textarea{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+        }
+    }
+    .contact-info{
+        .tel{
+            margin-bottom: 20px;
+            .tel-icon{
+                margin-right: 20px;
+                i{
+                    font-size: 30px;
+                }
+            }
+            .tel-info{
+                color: #333333;
+                h6{
+                    font-size: 2rem;
+                }
+                a{
+                    color: #333333;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .contact-icon{
+        a{
+            font-size: 30px;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .contact-info{
+        margin-top: 25px !important;
+    }
+    .contact-head{
+        margin-top: 2rem !important;
+    }
+}

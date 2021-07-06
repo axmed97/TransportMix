@@ -1,0 +1,50 @@
+﻿@model List<AppUser>
+@inject Microsoft.AspNetCore.Identity.UserManager<AppUser> userManager
+@{
+    ViewData["Title"] = "Index";
+    ViewData["activeTab"] = "User";
+}
+
+@section Title{
+    <h4 class="page-title text-uppercase font-medium font-20">User</h4>
+}
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                <td>
+                    @{
+                        var roles = await userManager.GetRolesAsync(item);
+                        string userRoles = "";
+                        foreach (var role in roles)
+                        {
+                            userRoles += role + " ";
+                        }
+                    }
+                    @userRoles
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-block btn-outline-warning">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                    <a asp-action="AddRole" asp-route-id="@item.Id" class="btn btn-block btn-outline-success">
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

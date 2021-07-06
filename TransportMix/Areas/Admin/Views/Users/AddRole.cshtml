@@ -1,0 +1,22 @@
+﻿@model UserAddRoleVM
+@{
+    ViewData["Title"] = "AddRole";
+    ViewData["activeTab"] = "User";
+}
+
+@section Title{
+    <h4 class="page-title text-uppercase font-medium font-20">User</h4>
+}
+
+<form method="post" class="w-100">
+    <div class="form-group">
+        <label>Role</label>
+        <select name="role" class="form-control">
+            @foreach (var role in Model.Roles)
+            {
+                <option value="@role">@role</option>
+            }
+        </select>
+    </div>
+    <input type="submit" value="Add Role" class="btn btn-block btn-outline-dark btn-lg" />
+</form>

@@ -1,0 +1,77 @@
+.login-section{
+    padding: 20rem 0 16rem;
+    h1{
+        color: #3a7bd5;
+        font-size: 3rem;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+    form{
+        input[type=text]{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+        }
+        input[type=email]{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+        }
+        input[type=password]{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+        }
+        input[type=submit]{
+            letter-spacing: 2.5px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            box-shadow: none;
+            transition: .5s ease-in-out;
+            width: 100%;
+            border: none;
+            background: #333;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        label{
+            font-size: 1.4rem;
+            color: gray;
+        }
+    }
+    a{
+        font-size: 15px;
+        text-decoration: underline;
+        color: #3a7bd5;
+    }
+}

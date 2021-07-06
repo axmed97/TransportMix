@@ -1,0 +1,20 @@
+﻿@model News
+@{
+    ViewData["Title"] = "Detail";
+    ViewData["activeTab"] = "News";
+}
+
+@section title{
+    <h4 class="page-title text-uppercase font-medium font-14">News</h4>
+}
+
+<dl>
+    <dt>Image</dt>
+    <dd><img width="450" class="img-thumbnail" src="~/image/@(Model.Image)" alt="Alternate Text" /></dd>
+    <dt>Header</dt>
+    <dd>@Model.Name</dd>
+    <dt>Content</dt>
+    <dd>@Model.Content</dd>
+</dl>
+
+<a href="/Admin/News/Index" class="btn btn-outline-danger btn-lg btn-block">Return</a>

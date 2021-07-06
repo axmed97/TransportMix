@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt4dzfyflyUOl/aDAtEJHdQAAAAACAAAAAAAQZgAAAAEAACAAAAB2BdQjvbCIv0n1beXq3j7rrA0mNOPKWrF+LxUW4UHAUAAAAAAOgAAAAAIAACAAAABYeaEeeKfJvDbahchz5Dxy2tf33ObanCfVxyUik56uviAAAACvexQudbotXg/n6Jk18ylpBGc+s4KzfWQUYR/+seDbpEAAAADSfLe5YX5iP4Lq10cEvaBXhS0spLWjKu+7+IuIJw/5+b83YXtf4vXRh8T+293z5e9NuSyGzep10bts8ZoiJ/2K</EncryptedPassword>
+    <History>True|2021-06-21T11:34:26.3985005Z;False|2021-05-31T10:53:55.2250793+04:00;True|2021-04-27T14:00:32.6553611+04:00;True|2021-04-27T13:59:26.2835168+04:00;True|2021-04-27T12:32:48.6945951+04:00;True|2021-04-27T12:29:42.7633175+04:00;False|2021-04-27T12:25:12.7123749+04:00;True|2021-04-27T11:59:30.3254640+04:00;True|2021-04-27T11:56:51.5568358+04:00;True|2021-04-23T17:24:05.0580853+04:00;True|2021-04-23T17:23:30.6805597+04:00;True|2021-04-23T17:22:08.8989686+04:00;False|2021-04-23T17:21:21.4857732+04:00;True|2021-04-23T10:57:20.9096974+04:00;False|2021-04-23T10:56:42.6881080+04:00;True|2021-04-22T10:29:17.5687511+04:00;True|2021-04-16T18:02:15.6636833+04:00;True|2021-04-16T18:01:21.9350753+04:00;True|2021-04-16T18:00:32.0413406+04:00;True|2021-04-16T17:57:12.4243386+04:00;True|2021-04-16T17:51:31.5535116+04:00;True|2021-04-15T13:39:38.2414306+04:00;True|2021-04-15T11:16:11.1191909+04:00;False|2021-04-15T11:15:15.3535657+04:00;True|2021-04-14T22:15:45.6372298+04:00;True|2021-04-14T22:10:54.9698807+04:00;True|2021-04-14T22:01:34.0294570+04:00;False|2021-04-14T21:56:57.7716951+04:00;True|2021-04-14T18:45:28.5774611+04:00;True|2021-04-14T18:32:38.0786450+04:00;True|2021-04-14T18:24:26.5165120+04:00;True|2021-04-14T18:21:28.1670962+04:00;True|2021-04-14T18:19:20.6867349+04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Default">
+      <Value>"Data Source=SQL5103.site4now.net%3bInitial Catalog=DB_A4F2AC_transportDB%3bUser Id=DB_A4F2AC_transportDB_admin%3bPassword=Transport_13</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

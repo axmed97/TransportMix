@@ -1,0 +1,59 @@
+﻿@model Rent
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["activeTab"] = "Rent";
+}
+
+@section title{
+    <h4 class="page-title text-uppercase font-medium font-14">Rent A Car</h4>
+}
+
+<form method="post" class="w-100" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="CompanyName"></label>
+        <input asp-for="CompanyName" class="form-control" />
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SecondaryPhone"></label>
+        <input asp-for="SecondaryPhone" class="form-control" />
+        <span asp-validation-for="SecondaryPhone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Facebook"></label>
+        <input asp-for="Facebook" class="form-control" />
+        <span asp-validation-for="Facebook" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Instagram"></label>
+        <input asp-for="Instagram" class="form-control" />
+        <span asp-validation-for="Instagram" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Youtube"></label>
+        <input asp-for="Youtube" class="form-control" />
+        <span asp-validation-for="Youtube" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Photo"></label>
+        <input asp-for="Photo" accept="image/" class="form-control" />
+        <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Update" class="btn btn-outline-dark btn-lg btn-block mb-3" />
+</form>
+<a href="/Admin/Rent/Index" class="btn btn-outline-danger btn-lg btn-block">Return</a>

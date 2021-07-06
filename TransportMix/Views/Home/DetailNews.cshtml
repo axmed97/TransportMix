@@ -1,0 +1,28 @@
+﻿@model News
+@{
+    ViewData["Title"] = "DetailNews";
+}
+
+<!-- Detail Start -->
+<section class="detail-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="news-detail mb-3">
+                    <div class="detail-img">
+                        <img src="~/image/@(Model.Image)" alt="">
+                    </div>
+                    <div class="detail-title my-4">
+                        <h1>@Model.Name</h1>
+                    </div>
+                    <div class="detail-text">
+                        <p class="text-justify">
+                            @Model.Content
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Detail End -->

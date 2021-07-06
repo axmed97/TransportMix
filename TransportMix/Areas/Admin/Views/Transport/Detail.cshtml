@@ -1,0 +1,33 @@
+﻿@model Transport
+@{
+    ViewData["Title"] = "Detail";
+    ViewData["activeTab"] = "Transport";
+}
+
+@section title{
+    <h4 class="page-title text-uppercase font-medium font-14">Transport</h4>
+}
+
+<dl>
+    <dt>Image</dt>
+    <dd><img width="450" class="img-thumbnail" src="~/image/@(Model.Image)" alt="Alternate Text" /></dd>
+    <dt>Company Name</dt>
+    <dd>@Model.CompanyName</dd>
+    <dt>Phone</dt>
+    <dd>@Model.Phone</dd>
+    <dt>Secondary Phone</dt>
+    <dd>@Model.SecondaryPhone</dd>
+    <dt>Email</dt>
+    <dd>@Model.Email</dd>
+    <dt>Address</dt>
+    <dd>@Model.Address</dd>
+    <dt>Facebook</dt>
+    <dd>@Model.Facebook</dd>
+    <dt>Instagram</dt>
+    <dd>@Model.Instagram</dd>
+    <dt>YouTube</dt>
+    <dd>@Model.Youtube</dd>
+</dl>
+
+<a href="/Admin/Transport/Index" class="btn btn-outline-danger btn-lg btn-block">Return</a>
+

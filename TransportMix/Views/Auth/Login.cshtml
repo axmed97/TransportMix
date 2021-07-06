@@ -1,0 +1,29 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!-- Login Start -->
+<section class="login-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Daxil Olun!</h1>
+                <div asp-validation-summary="ModelOnly"></div>
+                <form method="post">
+                    <input asp-for="Email" type="email" placeholder="Emailiniz">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <input asp-for="Password" type="password" placeholder="Şifrəniz">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                    <input asp-for="RememberMe" type="checkbox" id="remember">
+                    <label for="remember">Məni yadda saxla!</label>
+                    <input type="submit" id="btn" value="Daxil Ol!">
+                </form>
+                <a href="/Auth/Register">Yeni hesab yarat!</a>
+                <br>
+                <a href="/Auth/ForgotPassword">Şifrəmi unutmuşam!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login End -->

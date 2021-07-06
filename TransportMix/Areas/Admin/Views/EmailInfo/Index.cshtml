@@ -1,0 +1,29 @@
+﻿@model Emailnfos
+@{
+    ViewData["Title"] = "Index";
+    ViewData["activeTab"] = "Email";
+}
+
+@section title{
+    <h4 class="page-title text-uppercase font-medium font-14">Auto Master</h4>
+}
+
+<table class="table table-hover table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th></th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    <a href="/Admin/EmailInfo/Edit/@(Model.Id)" class="btn btn-outline-warning btn-block btn-lg">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                </td>
+                <td>@Model.Email</td>
+            </tr>
+    </tbody>
+</table>
+

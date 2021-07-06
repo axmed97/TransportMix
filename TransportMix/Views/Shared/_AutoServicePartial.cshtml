@@ -1,0 +1,60 @@
+﻿@model AutoServiceVM
+
+@foreach (var item in Model.AutoServices)
+{
+<div class="col-md-6 col-lg-4">
+    <div class="auto-card">
+        <div class="auto-car-img">
+            <img src="~/image/@(item.Image)" alt="">
+        </div>
+        <div class="auto-card-detail">
+            <h4>@item.CompanyName</h4>
+            <div class="auto-card-info d-flex align-items-center">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <a class="d-block" href="tel:@(item.Phone)">@item.Phone</a>
+                    @if (item.SecondaryPhone != null)
+                    {
+    <a class="d-block" href="tel:@(item.SecondaryPhone)">@item.SecondaryPhone</a>}
+                </div>
+            </div>
+            <div class="auto-card-info d-flex align-items-center">
+                <i class="fas fa-envelope-open"></i>
+                <div>
+                    @if (item.Email != null)
+                    {
+    <a href="mailto:@(item.Email)">@item.Email</a>}
+                </div>
+            </div>
+            <div class="auto-card-info d-flex align-items-center">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                    <a href="#">@item.Description</a>
+                </div>
+            </div>
+            <div class="auto-card-info d-flex align-items-center">
+                <i class="fas fa-map-marked-alt"></i>
+                <div>
+                    <a href="#">@item.Address</a>
+                </div>
+            </div>
+            <div class="auto-card-icon">
+                @if (item.Facebook != null)
+                {
+<a href="@(item.Facebook)">
+    <i class="fab fa-facebook-f"></i>
+</a>}
+                @if (item.Instagram != null)
+                {
+<a href="#">
+    <i class="fab fa-instagram"></i>
+</a>}
+                @if (item.Youtube != null)
+                {
+<a href="@(item.Youtube)">
+    <i class="fab fa-youtube"></i>
+</a>}
+            </div>
+        </div>
+    </div>
+</div>            }

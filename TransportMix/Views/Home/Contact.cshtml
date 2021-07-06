@@ -1,0 +1,63 @@
+﻿@model ContactVM
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<!-- Contact Start -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <h1>Bizə Yazın</h1>
+                <div class="contact-input">
+                    <form method="post">
+                        <input asp-for="Name" placeholder="Adınız">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <input asp-for="Email" placeholder="Emailiniz">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                        <input asp-for="Subject" placeholder="Mövzu">
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+
+                        <textarea rows="5" asp-for="Content" placeholder="Mesajınız..."></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+
+                        <input id="submit-btn" type="submit" value="Göndər">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <h1 class="contact-head">Bizimlə Əlaqə</h1>
+                <div class="contact-info">
+                    <div class="tel d-flex">
+                        <div class="tel-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="tel-info">
+                            <h6>Əlaqə nömrəsi</h6>
+                            <a href="tel:+994507628062">+994-50-762-80-62</a>
+                        </div>
+                    </div>
+                    <div class="tel d-flex">
+                        <div class="tel-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="tel-info">
+                            <h6>Email</h6>
+                            <a href="mailto:transportmix.az@gmail.com">transportmix.az@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-icon">
+                    <a target="_blank" href="https://www.facebook.com/Transportmixaz-104289894330898">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/transportmix_az/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact End -->

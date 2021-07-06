@@ -1,0 +1,19 @@
+﻿@model ArticleVM
+
+@foreach (var item in Model.Articles)
+{
+<div class="news-item">
+    <div class="news-img">
+        <img src="~/image/@(item.Image)" alt="">
+    </div>
+    <div class="news-info">
+        <div class="news-data">
+            <span>@item.PublishDate.ToString("dd/MM/yyyy")</span>
+        </div>
+        <h1 class="news-title">@(item.Header.Length>80?item.Header.Substring(0,80)+"...":item.Header)</h1>
+        <p class="news-text">
+            @(item.Content.Length>200?item.Content.Substring(0,200)+"...":item.Content)
+        </p>
+        <a target="_blank" href="/Home/DetailArticle/@item.Id" class="news-link">ardını oxu</a>
+    </div>
+</div>}

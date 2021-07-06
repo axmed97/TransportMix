@@ -1,0 +1,33 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Rent";
+}
+
+<!-- Article Start -->
+<section class="article-section">
+    <div class="container">
+        <div class="article-img">
+            <img src="~/image/13642.jpg" alt="">
+            <h3>Avtomobil icarəsi</h3>
+            <div class="article-bg"></div>
+        </div>
+    </div>
+</section>
+<!-- Article end -->
+<!-- Auto Salon Start -->
+<section class="auto-section">
+    <div class="container">
+        <div class="row">
+
+            @{ RentVM vm = new RentVM()
+                            {
+                                Rents = Model.Rents.OrderByDescending(x => x.Id).Take(9).ToList()
+                            }; }
+            <partial name="_RentPartial" model="vm" />
+        </div>
+        <div class="text-center">
+            <button id="rentloadMore" class="btn btn-outline-primary" style="font-size: 15px; padding: 15px 30px ">DAHA ÇOX</button>
+        </div>
+    </div>
+</section>
+<!-- Auto Salon End -->

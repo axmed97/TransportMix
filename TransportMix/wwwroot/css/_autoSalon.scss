@@ -1,0 +1,86 @@
+.auto-section{
+    padding: 60px 0;
+    min-height: 50vh;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0px 0;
+
+    }
+    select{
+        width: 100%;
+        padding: 10px 15px;
+        line-height: 22px;
+        font-size: 16px;
+        appearance: none;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        position: relative;
+        option{
+            width: 100%;
+        }
+        
+    }
+    .auto-card{
+        border-radius: 10px;
+        margin: 3rem 0;
+        background: #00d2ff;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        
+        .auto-card-detail{
+            padding: 1rem;
+            .auto-card-info{
+                padding-bottom: 1.5rem;
+            }
+            h4{
+                color: white;
+                font-size: 2rem;
+            }
+            i{
+                color: white;
+                font-size: 15px;
+                padding-right: 1rem;
+            }
+            a{
+                color: white;
+                font-size: 15px;
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .pagination{
+        margin: auto;
+
+        ul{
+            background-color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+            li{
+                a{
+                    padding: 1rem;
+                    font-size: 16px;
+                    transition: .5s ease-in-out;
+                    &:hover{
+                        color: gray;
+                    }
+                    &.active-page{
+                        background: #00d2ff;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        color: #fff;
+                        border-radius: 50%;
+                        padding: 1rem 1.8rem;
+                        transition: .5s ease-in-out;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

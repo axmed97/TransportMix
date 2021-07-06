@@ -1,0 +1,29 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!-- Login Start -->
+<section class="login-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Qeydiyyatdan keçin!</h1>
+                <div asp-validation-summary="ModelOnly"></div>
+                <form method="post">
+                    <input type="text" asp-for="Username" placeholder="Adınız">
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                    <input type="email" asp-for="Email" placeholder="Emailiniz">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <input type="password" asp-for="Password" placeholder="Şifrəniz">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                    <input type="password" asp-for="ConfirmPassword" placeholder="Şifrənizi Təkrar Edin">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    <input type="submit" id="btn" value="Qeydiyyat!">
+                </form>
+                <a href="/Auth/Login">Hesabınıza daxil olun!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login End -->
